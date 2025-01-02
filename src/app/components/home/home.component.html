@@ -3,7 +3,8 @@
   <ul>
     @for (post of posts; track post.id) {
       <li>
-        <a href="/post/{{post.id}}">{{ post.title }}</a>
+        <!-- routerLink foi usado com o RouterModule e um configuração no angular.json e add um .txt -->
+        <a [routerLink]="['/post', post.id]">{{ post.title }}</a>
       </li>
     }
   </ul>
