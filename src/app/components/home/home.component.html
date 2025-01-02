@@ -1,0 +1,10 @@
+<div>
+  <h1>All posts</h1>
+  <ul>
+    @for (post of posts; track post.id) {
+      <li>
+        <a href="/post/{{post.id}}">{{ post.title }}</a>
+      </li>
+    }
+  </ul>
+</div>
